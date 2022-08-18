@@ -111,13 +111,21 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-jm-Vfk">
+                                <rect key="frame" x="202" y="736" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fo6-kx-Fsd" secondAttribute="trailing" constant="20" id="1cQ-pb-qhq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pvj-YF-4gY" secondAttribute="trailing" constant="20" id="2w2-TJ-bPP"/>
+                            <constraint firstItem="d2T-3P-n9M" firstAttribute="top" secondItem="eOx-jm-Vfk" secondAttribute="bottom" constant="39" id="7mK-pO-o9B"/>
                             <constraint firstItem="Fo6-kx-Fsd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ALe-cI-fX4"/>
+                            <constraint firstItem="eOx-jm-Vfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E87-uW-T17"/>
                             <constraint firstItem="qh9-7R-w9g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ivb-Of-KQl"/>
                             <constraint firstItem="Gip-6E-Rde" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JHA-zG-Xkr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w1l-gx-zRL" secondAttribute="trailing" constant="20" id="Nra-TD-A8C"/>
@@ -160,6 +168,9 @@
         <image name="logo" width="196" height="196"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -14,6 +14,7 @@
 		8085E31728ADC5E7005BB535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085E31528ADC5E7005BB535 /* Main.storyboard */; };
 		8085E31928ADC5E8005BB535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8085E31828ADC5E8005BB535 /* Assets.xcassets */; };
 		8085E31C28ADC5E8005BB535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085E31A28ADC5E8005BB535 /* LaunchScreen.storyboard */; };
+		80A30AD328B7032400D01EA5 /* LoginNeflixController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30AD228B7032400D01EA5 /* LoginNeflixController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8085E31828ADC5E8005BB535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8085E31B28ADC5E8005BB535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8085E31D28ADC5E8005BB535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A30AD228B7032400D01EA5 /* LoginNeflixController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNeflixController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8085E31A28ADC5E8005BB535 /* LaunchScreen.storyboard */,
 				8085E31D28ADC5E8005BB535 /* Info.plist */,
 				805B915828B47384000EE60E /* HomeViewController.swift */,
+				80A30AD228B7032400D01EA5 /* LoginNeflixController.swift */,
 			);
 			path = pjtwo;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				8085E31028ADC5E7005BB535 /* AppDelegate.swift in Sources */,
 				8085E31228ADC5E7005BB535 /* SceneDelegate.swift in Sources */,
 				805B915928B47384000EE60E /* HomeViewController.swift in Sources */,
+				80A30AD328B7032400D01EA5 /* LoginNeflixController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

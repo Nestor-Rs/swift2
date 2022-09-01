@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		805B915928B47384000EE60E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B915828B47384000EE60E /* HomeViewController.swift */; };
 		80714B6F28C036C900C5B2A9 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714B6E28C036C900C5B2A9 /* PokemonListViewController.swift */; };
+		80714B7128C03C7400C5B2A9 /* PokeDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714B7028C03C7400C5B2A9 /* PokeDetalleViewController.swift */; };
 		8085E31028ADC5E7005BB535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085E30F28ADC5E7005BB535 /* AppDelegate.swift */; };
 		8085E31228ADC5E7005BB535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085E31128ADC5E7005BB535 /* SceneDelegate.swift */; };
 		8085E31428ADC5E7005BB535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085E31328ADC5E7005BB535 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		805B915828B47384000EE60E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		80714B6E28C036C900C5B2A9 /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		80714B7028C03C7400C5B2A9 /* PokeDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDetalleViewController.swift; sourceTree = "<group>"; };
 		8085E30C28ADC5E7005BB535 /* pjtwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pjtwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8085E30F28ADC5E7005BB535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8085E31128ADC5E7005BB535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				805B915828B47384000EE60E /* HomeViewController.swift */,
 				80A30AD228B7032400D01EA5 /* LoginNeflixController.swift */,
 				80714B6E28C036C900C5B2A9 /* PokemonListViewController.swift */,
+				80714B7028C03C7400C5B2A9 /* PokeDetalleViewController.swift */,
 			);
 			path = pjtwo;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8085E31428ADC5E7005BB535 /* ViewController.swift in Sources */,
+				80714B7128C03C7400C5B2A9 /* PokeDetalleViewController.swift in Sources */,
 				8085E31028ADC5E7005BB535 /* AppDelegate.swift in Sources */,
 				8085E31228ADC5E7005BB535 /* SceneDelegate.swift in Sources */,
 				805B915928B47384000EE60E /* HomeViewController.swift in Sources */,

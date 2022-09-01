@@ -22,7 +22,8 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var tbl: UITableView!
     let data: [Practicas] = [
     Practicas(title: "Login Facebook", segueId: "homeToFacebookSugue"),
-    Practicas(title: "Login Netflix", segueId: "loginNetflix")
+    Practicas(title: "Login Netflix", segueId: "loginNetflix"),
+    Practicas(title: "Poke tabla", segueId: "pokeTabla")
     ]
     override func viewDidLoad() {
         super.viewDidLoad()

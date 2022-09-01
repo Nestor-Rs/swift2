@@ -30,6 +30,7 @@
                         <outlet property="tbl" destination="hAk-Am-gPR" id="Mct-9N-T9E"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="homeToFacebookSugue" id="iSW-YV-cJz"/>
                         <segue destination="DEA-IF-zyo" kind="show" identifier="loginNetflix" id="qeS-ls-PSh"/>
+                        <segue destination="J7a-YN-F4O" kind="show" identifier="pokeTabla" id="0S0-wt-UYh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gp-JE-clQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -322,6 +323,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JP-mA-hG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="463.39285714285711"/>
+        </scene>
+        <!--Pokemon List View Controller-->
+        <scene sceneID="rPM-5e-4sL">
+            <objects>
+                <viewController id="J7a-YN-F4O" customClass="PokemonListViewController" customModule="pjtwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gz0-oP-grl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-7a-3uy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d7A-UX-gE8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="eNO-A1-R97">
+                                        <rect key="frame" x="0.0" y="365" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="d7A-UX-gE8" secondAttribute="bottom" id="COk-Av-rNR"/>
+                                    <constraint firstAttribute="trailing" secondItem="d7A-UX-gE8" secondAttribute="trailing" id="Uwa-TP-n9r"/>
+                                    <constraint firstItem="d7A-UX-gE8" firstAttribute="top" secondItem="ceZ-7a-3uy" secondAttribute="top" id="h5p-jV-VWN"/>
+                                    <constraint firstItem="d7A-UX-gE8" firstAttribute="leading" secondItem="ceZ-7a-3uy" secondAttribute="leading" id="yRd-nz-WQx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dmX-P6-SqF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ceZ-7a-3uy" firstAttribute="leading" secondItem="dmX-P6-SqF" secondAttribute="leading" id="WMK-39-BzY"/>
+                            <constraint firstItem="dmX-P6-SqF" firstAttribute="bottom" secondItem="ceZ-7a-3uy" secondAttribute="bottom" id="XmS-Jb-c1A"/>
+                            <constraint firstItem="dmX-P6-SqF" firstAttribute="trailing" secondItem="ceZ-7a-3uy" secondAttribute="trailing" id="g41-Jx-hTM"/>
+                            <constraint firstItem="ceZ-7a-3uy" firstAttribute="top" secondItem="dmX-P6-SqF" secondAttribute="top" id="tvk-Qq-s6y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qeg-Lg-rYm"/>
+                    <connections>
+                        <outlet property="loadingIndicatorView" destination="eNO-A1-R97" id="a7K-Zh-bLM"/>
+                        <outlet property="pokemonTableView" destination="d7A-UX-gE8" id="wUz-T5-SlR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYy-4h-OIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UIK-bR-JYt">

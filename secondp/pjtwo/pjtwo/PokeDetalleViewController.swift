@@ -10,22 +10,6 @@ import UIKit
 class PokeDetalleViewController: UIViewController {
     
     var pokemon:Pokemon? = nil
-    
-    struct PokemonDetail : Decodable{
-        var sprites:pokemonDetailSprite
-    }
-    
-    struct pokemonDetailHome:Decodable{
-        var front_default: String
-    }
-    
-    struct pokemonDetailOther:Decodable{
-        var home : pokemonDetailHome
-    }
-    
-    struct pokemonDetailSprite:Decodable{
-        var other : pokemonDetailOther
-    }
 
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var sprite: UIImageView!

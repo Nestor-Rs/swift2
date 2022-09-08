@@ -31,9 +31,12 @@ class PokemonTableViewCell: UITableViewCell {
     }
     
     func loadpokemon(pokemon:Pokemon){
+        self.imagen.isHidden=true
+        self.indicator.startAnimating()
             let task = URLSession.shared.dataTask(with: URL(string: pokemon.url)!){ data, response, error in
                 let pokemonDetail = try! JSONDecoder().decode(PokemonDetail.self, from: data!)
                 self.loadPokemonImage(urlImage: pokemonDetail.sprites.other.home.front_default)
+                
             }
             task.resume()
     }
@@ -45,6 +48,7 @@ class PokemonTableViewCell: UITableViewCell {
                 DispatchQueue.main.sync {
                     self.imagen.image = image
                     self.indicator.stopAnimating()
+                    self.imagen.isHidden=false
                 }
             }
             

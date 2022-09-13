@@ -32,11 +32,71 @@
                         <segue destination="BYZ-38-t0r" kind="show" identifier="homeToFacebookSugue" id="iSW-YV-cJz"/>
                         <segue destination="DEA-IF-zyo" kind="show" identifier="loginNetflix" id="qeS-ls-PSh"/>
                         <segue destination="J7a-YN-F4O" kind="show" identifier="pokeTabla" id="0S0-wt-UYh"/>
+                        <segue destination="wtH-yW-8cl" kind="show" identifier="genericLogin" id="b0k-EJ-zvl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gp-JE-clQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155.07246376811597" y="125.89285714285714"/>
+        </scene>
+        <!--Generic Login View Controller-->
+        <scene sceneID="ATd-L3-Qh4">
+            <objects>
+                <viewController id="wtH-yW-8cl" customClass="GenericLoginViewController" customModule="pjtwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9D-Yv-UZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axK-c8-jvu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vke-xf-C19">
+                                <rect key="frame" x="122" y="781" width="170" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FORGOT PASSWORD?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Du1-oa-WSI">
+                                <rect key="frame" x="75" y="655" width="264" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-iD-y09">
+                                <rect key="frame" x="25" y="366.5" width="364" height="313.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SZF-xc-9Uk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vke-xf-C19" firstAttribute="leading" secondItem="SZF-xc-9Uk" secondAttribute="leading" constant="122" id="1zb-sK-h4N"/>
+                            <constraint firstItem="jYb-iD-y09" firstAttribute="leading" secondItem="SZF-xc-9Uk" secondAttribute="leading" constant="25" id="5J3-Wl-egg"/>
+                            <constraint firstItem="SZF-xc-9Uk" firstAttribute="trailing" secondItem="vke-xf-C19" secondAttribute="trailing" constant="122" id="9TX-dd-s8A"/>
+                            <constraint firstItem="Du1-oa-WSI" firstAttribute="leading" secondItem="SZF-xc-9Uk" secondAttribute="leading" constant="75" id="Gks-P0-o3c"/>
+                            <constraint firstItem="jYb-iD-y09" firstAttribute="height" secondItem="U9D-Yv-UZ4" secondAttribute="height" multiplier="0.35" id="GzU-w7-eZL"/>
+                            <constraint firstItem="vke-xf-C19" firstAttribute="centerX" secondItem="U9D-Yv-UZ4" secondAttribute="centerX" id="Mgm-21-CVI"/>
+                            <constraint firstItem="axK-c8-jvu" firstAttribute="top" secondItem="U9D-Yv-UZ4" secondAttribute="top" id="OWG-aL-Kuu"/>
+                            <constraint firstItem="axK-c8-jvu" firstAttribute="height" secondItem="U9D-Yv-UZ4" secondAttribute="height" multiplier="0.5" id="PXc-lR-tdH"/>
+                            <constraint firstItem="vke-xf-C19" firstAttribute="top" secondItem="Du1-oa-WSI" secondAttribute="bottom" constant="75" id="S1O-B3-TvU"/>
+                            <constraint firstItem="Du1-oa-WSI" firstAttribute="top" secondItem="jYb-iD-y09" secondAttribute="bottom" constant="-25" id="SIP-nb-546"/>
+                            <constraint firstItem="SZF-xc-9Uk" firstAttribute="bottom" secondItem="vke-xf-C19" secondAttribute="bottom" constant="50" id="atY-aQ-rSP"/>
+                            <constraint firstItem="SZF-xc-9Uk" firstAttribute="trailing" secondItem="jYb-iD-y09" secondAttribute="trailing" constant="25" id="mNI-sV-qfr"/>
+                            <constraint firstItem="SZF-xc-9Uk" firstAttribute="trailing" secondItem="Du1-oa-WSI" secondAttribute="trailing" constant="75" id="pjg-5v-Lku"/>
+                            <constraint firstItem="SZF-xc-9Uk" firstAttribute="trailing" secondItem="axK-c8-jvu" secondAttribute="trailing" id="sWV-MJ-M3J"/>
+                            <constraint firstItem="axK-c8-jvu" firstAttribute="leading" secondItem="SZF-xc-9Uk" secondAttribute="leading" id="wFS-AF-p5M"/>
+                            <constraint firstItem="Du1-oa-WSI" firstAttribute="centerX" secondItem="U9D-Yv-UZ4" secondAttribute="centerX" id="yMz-YB-OrA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c5s-Oq-IMm"/>
+                    <connections>
+                        <outlet property="backgraund" destination="axK-c8-jvu" id="fmW-GW-FW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7n6-Dq-oMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="-634"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -460,6 +520,9 @@
         <image name="logoNetflix" width="1024" height="276.74200439453125"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

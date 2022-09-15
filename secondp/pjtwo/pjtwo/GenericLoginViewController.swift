@@ -14,6 +14,7 @@ class GenericLoginViewController: UIViewController {
     let colorTop = UIColor.init(red: 49/255, green: 128/255, blue: 128/255, alpha: 1).cgColor
     let colorButtom = UIColor.init(red: 86/255, green: 77/255, blue: 194/255, alpha: 1).cgColor
     
+    @IBOutlet weak var image: UIImageView!
     let gradient = CAGradientLayer()
     
     override func viewDidLoad() {
@@ -23,7 +24,11 @@ class GenericLoginViewController: UIViewController {
         gradient.frame = backgraund.bounds
         gradient.shouldRasterize = true
         backgraund.layer.addSublayer(gradient)
-
+        backgraund.bringSubviewToFront(image)
+        
+        image.image = image.image?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor.white
+        
     }
 
 }
